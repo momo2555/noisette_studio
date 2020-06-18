@@ -1,0 +1,83 @@
+/*import css files */
+@import "window.css";
+@import "menu.css";
+@import "toolbar.css";
+* {
+    box-sizing: border-box;
+    font-family: 'Calibri', sans-serif;
+    font-weight:100;
+
+}
+/*scroll bar edit style*/
+::-webkit-scrollbar              { 
+    width: 12px;
+    
+    /* 1 */ }
+::-webkit-scrollbar-button       { 
+    background-color: rgb(44, 44, 44);
+    /* 2 */ }
+::-webkit-scrollbar-track        { 
+    background-color: rgb(44, 44, 44);
+    /* 3 */ }
+::-webkit-scrollbar-track-piece  { 
+    background-color: transparent;
+    width: 3px;
+    /* 4 */ }
+::-webkit-scrollbar-thumb        { 
+    border-radius: 3px;
+    
+    background-color: rgb(112, 112, 112);
+    
+    cursor: pointer;
+    /* 5 */ }
+    ::-webkit-scrollbar-thumb:hover {
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+::-webkit-scrollbar-corner       { 
+    background-color: transparent;
+    /* 6 */ }
+::-webkit-resizer                { 
+    background-color: rgb(44, 44, 44);
+    /* 7 */ }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #424242;
+    color: #ddddddbd;
+    /*border: 1px solid #f8684c;*/
+    position: absolute;
+}
+body.maximized {
+    border: none;
+}
+
+div.box {
+    flex: 1;
+    overflow-y: auto;
+
+}
+
+#page {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    overflow: hidden;
+}
+
+#left-box {
+    background-color: #5e5e5e;
+}
+#middle-box {
+   
+}
+#right-box {
+    background-color: #3d3d3d;
+}
+#status-bottom {
+    height: 30px;
+}
+

@@ -1,0 +1,61 @@
+{
+    "Fichier" : {
+        "open" : {
+            "name" : "Ouvrir",
+            "type" : "menu-item",
+            "shortcut" : "Ctrl+O"
+        },
+        "save" : {
+            "name" : "Enregistrer",
+            "type" : "menu-item",
+            "shortcut" : "CTrl+S"
+
+        },
+        "new" : {
+            "name" : "Nouceau",
+            "type" : "menu-item",
+            "submenu" : {
+                
+                "project" : {
+                    "name" : "Projet",
+                    "type" : "menu-item",
+                    "shortcut" : ""
+                },
+                "file" : {
+                    "name" : "Fichier",
+                    "type" : "menu-item",
+                    "shortcut" : ""
+                }
+                
+            }
+        },
+        "" : {
+            "type" : "separator"
+        },
+        "quit" : {
+            "name" : "Quitter",
+            "type" : "menu-item",
+            "shortcut" : "Ctrl+Q"
+        }
+    },
+    "Edition" : {
+
+        "copy" : {
+            "name" : "Copier",
+            "type" : "menu-item",
+            "shortcut" : "Ctrl+C"
+        },
+        "paste" : {
+            "name" : "Coller",
+            "type" : "menu-item",
+            "shortcut" : "CTrl+V"
+
+        }
+    },
+    "Afficahge": {
+
+    },
+    "Aide" : {
+
+    }
+}

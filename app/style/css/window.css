@@ -1,0 +1,68 @@
+#form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+}
+#frame {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #383838;
+    display: flex;
+    
+}
+#frame-details {
+    flex: 1;
+    -webkit-app-region: drag;
+    display: flex;
+}
+#frame-details p {
+    
+    margin: auto;
+    padding: 0;
+}
+#frame-buttons {
+    display: flex;
+    
+
+}
+
+.frame-button {
+    height: 100%;
+    width: 30px;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #dddddd;
+    cursor: pointer;
+    -webkit-user-select: none;
+
+}
+.frame-button:hover {
+    background-color: rgb(48, 48, 48);
+}
+.frame-button:focus {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    color: #dddddd;
+    outline: O !important;
+}
+#frame-button-close:hover {
+    background-color: #f8684c;
+}
+
+#content {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 95px;
+    height: calc(100% - 95px);
+    width: 100%;
+}

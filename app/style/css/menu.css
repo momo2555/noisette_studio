@@ -1,0 +1,93 @@
+menu {
+    height: 25px;
+    width: 100%;
+    background-color: #383838;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    z-index: 9999999;
+    
+}
+menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+
+    
+}
+menu ul li {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    position: relative;
+    
+}
+
+menu ul li:hover {
+    text-decoration: underline;
+}
+menu ul li ul.submenu {
+    text-decoration: none !important;
+    background-color: #383838;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    height: auto;
+    left: 0;
+    top: 100%;
+    min-width: 250px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    z-index: 9999999;
+    
+}
+menu ul li ul.submenu.is-opened {
+    display: flex;
+}
+menu ul li ul.submenu li {
+    padding: 7px;
+    padding-left: 5px;
+    text-shadow: 0 0 20px rgba(0, 0,0, 0.5);
+    
+
+}
+menu ul li ul.submenu li:hover {
+    background-color: rgb(87, 87, 87);
+    text-decoration: none;
+
+}
+.submenu .submenu {
+    top: 0;
+    left: 100%;
+}
+.has-children:hover .submenu {
+    display: flex;
+}
+.has-children {
+    display: flex;
+}
+
+.has-children::after  {
+    content: ">";
+    padding-right: 10px;
+    
+}
+.submenu .menuitem  {
+    display: flex;;
+}
+.submenu .menuitem span.menu-name {
+    flex: 1;
+}
+/*for check area item*/
+.menuitem span.menu-checkzone {
+    width: 25px;
+}
+.menuitem span.menu-checkzone[checked]:before {
+    content: 'o';
+}
