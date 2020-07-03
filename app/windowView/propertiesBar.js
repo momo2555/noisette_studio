@@ -1,0 +1,3 @@
+class PropertiesBar {
+    constructor () {}
+}

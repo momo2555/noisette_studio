@@ -1,7 +1,5 @@
 #toolbar {
     height: 40px;
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 55px;
+    background-color: #2e2e2e;
 }

@@ -1,6 +1,9 @@
 let fs = require('fs');
 let $ = require('jquery');
+//gestionnaire du menu
 let NsMenu = require('app/style/js/menu');
+//gestionnaire du workspace
+let NsWorkSpace = require("app/windowView/workSpace");
 /**
  * Class which represent and control the window
  */
@@ -26,10 +29,10 @@ class NsWindow {
                 document.querySelector('body').innerHTML = data;
                 this.winName = "Noisette Studio";
                 this.creatEvents();
-                //create the menu - the menu is created the first time when we create a menu object
+                //create the menu - the menu is created the first time when a menu object is instancied
                 this.menu = new NsMenu();
-                
-                
+                this.workSpace = new NsWorkSpace(this);
+                this.workSpace.createWorkSpace();
             }
         } );
         
@@ -99,7 +102,14 @@ class NsWindow {
         $('#frame-details p').append(this.name);
         
     }
-
+    /**
+     * get: return the content div
+     * @returns {DOMelement}
+     */
+    get winContext() {
+        return $('#content');
+    }
+    
 }
 
 

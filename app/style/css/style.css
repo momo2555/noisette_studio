@@ -2,6 +2,9 @@
 @import "window.css";
 @import "menu.css";
 @import "toolbar.css";
+@import "leftbar.css";
+@import "rightbar.css";
+@import "tabmanager.css";
 * {
     box-sizing: border-box;
     font-family: 'Calibri', sans-serif;
@@ -56,7 +59,7 @@ body.maximized {
 }
 
 div.box {
-    flex: 1;
+    /*flex: 1;*/
     overflow-y: auto;
 
 }
